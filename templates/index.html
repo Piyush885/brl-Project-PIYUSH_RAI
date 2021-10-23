@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>main website</title>
+    <link rel="stylesheet" href="static/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Festive&family=Kalam:wght@700&display=swap" rel="stylesheet">
+
+<!-- <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon"> -->
+<link rel="icon" type="image/svg+xml" href="static/favicon.svg" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar" id="navbar">
+
+            <div class="top" id="top">
+                <nav>
+                    <ul>
+                        <li><a class="black" href='#'>Home</a></li>
+                        <li><a class="black" href='#'>About</a></li>
+                        <li><a class="black" href='#' style="padding-right:1.5rem;">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            
+
+        </div>
+
+
+
+        
+        
+    </header>
+    
+    <div class='container' id='rank1'>
+        <div class="item mainfont" id="item4" >REGISTER FOR LOGIN SYSTEM</div>
+        <div class="item" id="item1">
+            <form action="\next" method="post">
+                {% csrf_token %}
+
+            <input id = "name" type="text" placeholder="Your Name" name="name" class="name txtsize input">
+            </div>
+
+
+        <div class="item" id="item2">
+                <input id  = "email" type="email" placeholder="Email" name="email" class="password txtsize input">
+
+        </div>
+        <div class="item" id="item7">
+            <input id = "number" type="number" placeholder="Phone Number" class="password txtsize input">
+        </div>
+
+        <div class="item" id="item8">
+            <input type="password" placeholder="Password" class="password txtsize input">
+        </div>
+
+            
+        <div class="item" id="item3">
+
+            <button onclick="audio.play();" type="submit" class="submit button txtsize input" style="font-family: 'Kalam', cursive; border-color: rgb(132, 0, 255);" >Submit</button>
+            <script>
+                const audio = new Audio();
+                audio.src = "static/Female Thank You.mp3";
+            </script>
+
+        </div>
+    </form>
+
+        <div class="item" id="item5">
+            <a href="/login" >Old User ? Login Here</a>
+        </div>
+
+        <div id="item6">
+            <a href="https://www.amazon.com">
+                <img class="star" id="star" src="static/ClipartKey_183702.png" alt="" style="height: 20vh;  width: 20vh;"> 
+            </a>   
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
